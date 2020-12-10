@@ -82,22 +82,22 @@ public class AsIntStreamTest {
 //        assertEquals(newMax, 11);
     }
 
-    @Test
-    public void toArray() {
-        stream = AsIntStream.of(testIntArr);
-        int[] res = stream.filter(x -> x > 0).toArray();
-        int[] exp = {1, 10, 5, 7};
-//        System.out.println(Arrays.toString(res));
-        assertArrayEquals(exp, res);
-    }
+//    @Test
+//    public void toArray() {
+//        stream = AsIntStream.of(testIntArr);
+//        int[] res = stream.filter(x -> x > 0).toArray();
+//        int[] exp = {1, 10, 5, 7};
+////        System.out.println(Arrays.toString(res));
+//        assertArrayEquals(exp, res);
+//    }
 
-    @Test
-    public void flatMap() {
-        stream = AsIntStream.of(testIntArr);
-        stream = stream.flatMap(x -> AsIntStream.of(x - 1, x + 1));
-        int[] expected = {0, 2, -6, -4, 9, 11, 4, 6, -2, 0, -1, 1, -1, 1, -5, -3, 6, 8};
-        assertArrayEquals(expected, stream.toArray());
-    }
+//    @Test
+//    public void flatMap() {
+//        stream = AsIntStream.of(testIntArr);
+//        stream = stream.flatMap(x -> AsIntStream.of(x - 1, x + 1));
+//        int[] expected = {0, 2, -6, -4, 9, 11, 4, 6, -2, 0, -1, 1, -1, 1, -5, -3, 6, 8};
+//        assertArrayEquals(expected, stream.toArray());
+//    }
 
     @Test
     public void reduce() {
