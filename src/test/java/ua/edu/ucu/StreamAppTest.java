@@ -27,13 +27,13 @@ public class StreamAppTest {
         assertEquals(expResult, result);        
     }
 
-    @Test
-    public void testStreamToArray() {
-        System.out.println("streamToArray");
-        int[] expResult = {-1, 0, 1, 2, 3};
-        int[] result = StreamApp.streamToArray(intStream);
-        assertArrayEquals(expResult, result);        
-    }
+//    @Test
+//    public void testStreamToArray() {
+//        System.out.println("streamToArray");
+//        int[] expResult = {-1, 0, 1, 2, 3};
+//        int[] result = StreamApp.streamToArray(intStream);
+//        assertArrayEquals(expResult, result);
+//    }
 
     @Test
     public void testStreamForEach() {
